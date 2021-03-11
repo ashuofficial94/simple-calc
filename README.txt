@@ -1,1 +1,0 @@
-Watch Typescript changes: tsc --watch

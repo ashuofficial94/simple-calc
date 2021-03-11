@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=docTitle%></title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/home.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <script src="/jquery.min.js"></script>
+        <script src="/bootstrap.min.js"></script>
+        <script src="/js/home.js" defer></script>
+        <title><%=docTitle%></title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="operations-panel">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#sqrt">Square Root</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#fact">Factorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#nlog">Natural Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#exp">Exponential</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="sqrt">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Enter the number:</label>
+                                </td>
+                                <td><input type="number" id="sqrt-number" onkeyup="sqrt()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Result (√n):</label>
+                                </td>
+                                <td><input type="float" id="sqrt-result" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane container fade" id="fact">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Enter the number:</label>
+                                </td>
+                                <td><input type="number" id="fact-number" onkeyup="fact()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Result (n!):</label>
+                                </td>
+                                <td><input type="float" id="fact-result" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane container fade" id="nlog">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Enter the number:</label>
+                                </td>
+                                <td><input type="number" id="log-number" onkeyup="log()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Result (log<sub>e</sub>n):</label>
+                                </td>
+                                <td><input type="float" id="log-result" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane container fade" id="exp">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Enter the number (x):</label>
+                                </td>
+                                <td><input type="number" id="base-number" onkeyup="exp()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Enter the exponent (y):</label>
+                                </td>
+                                <td><input type="number" id="exp-number" onkeyup="exp()"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Result (x<sup>y</sup>):</label>
+                                </td>
+                                <td><input type="float" id="exp-result" disabled></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

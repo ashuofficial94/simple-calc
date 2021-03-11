@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(134, 125, 125);
+    font-family: 'Raleway';
+}
+
+.operations-panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.tab-content {
+    position: relative;
+    left: 55%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
