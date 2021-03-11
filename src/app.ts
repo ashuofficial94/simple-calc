@@ -4,6 +4,7 @@ import express = require("express");
 import bodyParser = require("body-parser");
 
 import rootDir from "./utils/path";
+import {router as homeRouter} from './routes/home';
 
 const app = express();
 
@@ -27,4 +28,5 @@ app.use(
     )
 );
 
+app.use(homeRouter);
 app.listen(3000);

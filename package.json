@@ -4,6 +4,8 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
+    "start": "tsc && node ./bin/www",
+    "start-dev": "tsc && nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
