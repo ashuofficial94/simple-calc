@@ -17,4 +17,4 @@ app.use(express.static(path_1.default.join(path_2.default, "..", "node_modules",
 app.use(express.static(path_1.default.join(path_2.default, "..", "node_modules", "bootstrap", "dist", "js")));
 app.use(express.static(path_1.default.join(path_2.default, "..", "node_modules", "bootstrap", "dist", "css")));
 app.use(home_1.router);
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
