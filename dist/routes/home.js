@@ -5,5 +5,5 @@ var express = require("express");
 var router = express.Router();
 exports.router = router;
 router.get("/", function (req, res) {
-    res.render("home", { docTitle: "Home" });
+    res.render("home", { docTitle: "Simple Calculator" });
 });
