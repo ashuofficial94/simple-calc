@@ -4,8 +4,8 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "start": "tsc && node ./bin/www",
-    "start-dev": "tsc && nodemon ./bin/www",
+    "start": "node ./bin/www",
+    "start-dev": "nodemon ./bin/www",
     "test": "mocha --exit dist/*"
   },
   "author": "",
