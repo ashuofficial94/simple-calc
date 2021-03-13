@@ -16,4 +16,4 @@ it("should natural log number correctly", () => {
 
 it("should exponetial number correctly", () => {
     expect(Math.pow(2, 10)).to.equals(1024);
-})
+});
