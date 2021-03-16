@@ -1,9 +1,6 @@
-FROM alpine:latest
-RUN apk add --no-cache nodejs npm
-RUN npm install
-RUN npm test
-WORKDIR /app
-COPY . /app
+FROM node
+RUN mkdir -p /home/app
+COPY . /home/app
 EXPOSE 3000
 ENTRYPOINT ["npm"]
 CMD ["start"]
