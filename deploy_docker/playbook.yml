@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of calculator
+  hosts: all
+  tasks:
+    - name: Pull calculator devops image
+      docker_image:
+        name: bajpaiashu2111/simple-calc-repo
+        source: pull
